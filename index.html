@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store List</i></title>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<body class="bg-light">
+    <body class="bg-light">
 
-<div class="container mt-5">
+        <div class="container mt-5">
 
 
-    <h2 class="text-center mt-5">
-<i class="fa-solid fa-bag-shopping fa-beat"></i>
-Grocery Store
-</h2>
+            <h2 class="text-center mt-5">
+                <i class="fa-solid fa-bag-shopping fa-beat"></i>
+                Grocery Store
+            </h2>
 
-<div class="col-md-6 mx-auto">
+            <div class="col-md-6 mx-auto">
 
-<input type="text" id="itemInput" class="form-control mb-2" placeholder="Enter grocery item">
-<input type="date" id = "itemDate" class="form-control mb-2">
-<input type = "text" id ="itemQuantity" class ="form-control mb-2" placeholder="Enter Quantity in number">
-<button class="btn btn-primary w-100 mb-2" onclick="addItem()"><i class="fa-solid fa-cart-plus fa-flip" style="color: rgb(116, 192, 252);"></i> Add Item</button>
+                <input type="text" id="itemInput" class="form-control mb-2" placeholder="Enter grocery item">
+                <input type="date" id="itemDate" class="form-control mb-2" onclick="this.showPicker()">
+                <input type="text" id="itemQuantity" class="form-control mb-2" placeholder="Enter Quantity in number">
+                <button class="btn btn-primary w-100 mb-2" onclick="addItem()"><i class="fa-solid fa-cart-plus fa-flip"
+                        style="color: rgb(116, 192, 252);"></i> Add Item</button>
 
-<ul id="itemList" class="list-group mb-3"></ul>
+                <ul id="itemList" class="list-group mb-3"></ul>
 
-<button class="btn btn-success w-100" onclick="saveList()"><i class="fa-regular fa-floppy-disk fa-beat-fade" style="color: rgb(116, 192, 252);"></i> Save List</button>
+                <button class="btn btn-success w-100" onclick="saveList()"><i
+                        class="fa-regular fa-floppy-disk fa-beat-fade" style="color: rgb(116, 192, 252);"></i> Save
+                    List</button>
 
-</div>
-</div>
+            </div>
+        </div>
 
-<script src="script.js"></script>
+        <script src="script.js"></script>
 
-    
-</body>
+
+    </body>
+
 </html>

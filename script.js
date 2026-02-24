@@ -2,7 +2,10 @@
 let items = JSON.parse(localStorage.getItem("grocery")) || [];
 
 let tempItems = [];
+let today = new Date().toISOString().split("T")[0];
 
+document.getElementById("itemDate").setAttribute("min", today);
+ 
 
 function displayItems() {
 
