@@ -1,6 +1,7 @@
 
 let items = JSON.parse(localStorage.getItem("grocery")) || [];
 
+
 let tempItems = [];
 let today = new Date().toISOString().split("T")[0];
 
@@ -17,6 +18,9 @@ function displayItems() {
     }
 
     list.innerHTML = "";
+
+    
+    localStorage.setItem("grocery", JSON.stringify(tempItems));
 
     tempItems.forEach((item, index) => {
 
@@ -97,9 +101,9 @@ function editItem(index){
 }
 
 
-function saveList(){
 
-    localStorage.setItem("grocery", JSON.stringify(tempItems));
+// function saveList(){
 
-    alert("Saved Successfully.....");
-}
+//     localStorage.setItem("grocery", JSON.stringify(tempItems));
+
+// }
